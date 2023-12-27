@@ -24,4 +24,4 @@ I am currently seeking new opportunities where I can contribute my skills and gr
 
 ## Contact 📬
 
-Let's connect! You can reach me at `felipeslzar@gmail.com` or connect with me on `https://linkedin.com/in/felipe-salazar-jimenez`.
+Let's connect! You can reach me at `felipeslzar@gmail.com` or connect with me on [LinkedIn](https://linkedin.com/in/felipe-salazar-jimenez) at **Felipe - Full Stack Developer**.
