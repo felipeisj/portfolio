@@ -1,19 +1,19 @@
 
 const Navbar = () => {
   return (
-    <header className="flex fixed w-full items-center bg-gradient-to-r from-[#242424] to-[#04B404] text-white opacity-100">
-      <div className="flex max-w-4xl justify-between mx-auto  w-full h-16">
-        <h1 className="text-xl font-bold my-auto">Logo</h1>
+    <header className="flex fixed w-full items-center bg-gradient-to-b from-[#242424] to-[#1a8b1a] text-white ">
+      <div className="flex max-w-4xl font-bold justify-between mx-auto  w-full h-16">
+        <h1 className="text-xl my-auto">Logo</h1>
         <nav className="flex ">
-          <ul className="flex space-x-4 my-auto">
+          <ul className="flex space-x-8 my-auto">
             <li>
-              <a href="#welcome" className=" hover:text-blue-800">Inicio</a>
+              <a href="#welcome" className=" hover:text-slate-400 ">Inicio</a>
             </li>
             <li>
-              <a href="#projects" className=" hover:text-blue-800">Projects</a>
+              <a href="#projects" className=" hover:text-slate-400">Projects</a>
             </li>
             <li>
-              <a href="#about" className=" hover:text-blue-800">About</a>
+              <a href="#about" className=" hover:text-slate-400">About</a>
             </li>
             {/* Agrega más elementos de navegación según sea necesario */}
           </ul>

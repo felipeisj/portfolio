@@ -8,7 +8,7 @@ const Card = ({ title, content, imageUrl }) => {
   };
 
   return (
-    <div className="group bg-white shadow-md rounded-lg overflow-hidden cursor-pointer relative w-64 h-64 mt-12">
+    <div className="group bg-white shadow-md rounded-lg overflow-hidden cursor-pointer relative w-2/5 h-64">
       <div 
         className="absolute inset-0 bg-cover bg-center" 
         style={cardStyle}

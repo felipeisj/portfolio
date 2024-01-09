@@ -1,3 +1,4 @@
+import GridExperience from "../components/GridExperience";
 
 const Projects = () => {
   const folderStructure = [
@@ -43,10 +44,17 @@ const Projects = () => {
   };
 
   return (
-    <div className="bg-[#242424] text-[#04B404] font-mono text-lg p-8">
-      <p>[user@portfolio]: /projects$ ls</p>
-      {folderStructure.map((item, index) => renderFolder(item, index))}
+    <div className="flex flex-column w-full items-center justify-around px-16">
+
+      <div className="bg-[#242424] text-[#04B404] font-mono text-lg ">
+        <p>[user@portfolio]: /projects$ ls</p>
+        {folderStructure.map((item, index) => renderFolder(item, index))}
+      </div>
+
+      <GridExperience /> 
+
     </div>
+    
   );
 
 }

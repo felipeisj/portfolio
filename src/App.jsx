@@ -18,14 +18,14 @@ function App() {
       </section>
       <section 
         id="projects" 
-        className="bg-[#242424] text-[#04B404] font-mono text-lg p-5" 
+        className="bg-[#242424] min-h-screen text-[#04B404] font-mono text-lg p-5" 
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <Projects />
       </section>
       <section 
         id="about" 
-        className=" h-auto flex items-center pb-[10rem]" 
+        className="min-h-screen flex items-center " 
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <About />
