@@ -8,24 +8,30 @@ import Welcome from './views/Welcome'
 
 function App() {
   return (
-  <div className=" text-[#04B404]">
+  <div className=" text-[#4ADE80] bg-[#1F2937]">
     <Navbar />
     <section 
         id="welcome" 
-        className="h-screen flex justify-center items-center"
+        className="h-screen flex justify-center items-center pt-16"
       >
         <Welcome />
       </section>
+
+      <hr className="h-px w-4/5 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-500" />
+
       <section 
         id="projects" 
-        className="bg-[#242424] min-h-screen text-[#04B404] font-mono text-lg p-5" 
+        className="bg-[#1F2937] flex justify-center min-h-screen text-lg p-16" 
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <Projects />
       </section>
+
+      <hr className="h-px w-4/5 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-200" />
+
       <section 
         id="about" 
-        className="min-h-screen flex items-center " 
+        className="min-h-screen mb-12"
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <About />

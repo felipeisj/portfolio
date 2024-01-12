@@ -28,15 +28,15 @@ const Projects = () => {
     const paddingLeft = item.depth * 20; // Incrementa el padding para cada nivel de profundidad
 
     return (
-      <div key={key} style={{ paddingLeft: `${paddingLeft}px` }}>
+      <div key={key} style={{ paddingLeft: `${paddingLeft}px`}}>
 
-        {item && !item.folder ? <a href={item.url} className="text-[#f3cece] inline-block p-2 border-b-2
-        border-transparent rounded-t-lg hover:border-gray-300
+        {item && !item.folder ? <a href={item.url} className="text-[#f3cece] inline-block py-2  border-b-2
+        border-transparent rounded-t-lg hover:border-gray-100
         dark:hover:text-gray-300"
         >
           {item.name}</a>
         :
-        <p className="inline bg-[#04B404] text-black px-1">{item.name}</p>
+        <p className="inline bg-[#04B404] text-black px-2">{item.name}</p>
         }
         {item.children && item.children.map((child, index) => renderFolder(child, `child-${index}`))}
       </div>
@@ -46,13 +46,14 @@ const Projects = () => {
   return (
     <div className="flex flex-column w-full items-center justify-around px-16">
 
-      <div className="bg-[#242424] text-[#04B404] font-mono text-lg ">
+      <div className="font-mono text-lg ">
         <p>[user@portfolio]: /projects$ ls</p>
         {folderStructure.map((item, index) => renderFolder(item, index))}
       </div>
-
-      <GridExperience /> 
-
+      <div className="text-white">
+        <h2 className="font-mono text-3xl text-center mb-4">Experience</h2>
+        <GridExperience /> 
+      </div>
     </div>
     
   );

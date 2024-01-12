@@ -1,7 +1,7 @@
-import Box from "./Box";
+import Box from "./TechBox";
 
 const GridExperience = () => <div>
-    <ul className="grid grid-cols-3 gap-8 py-4 text-white">
+    <ul className="grid grid-cols-3 gap-8 py-4 ">
       <Box title="ReactJS" image="education.svg"  />
       <Box title="HTML 5" image="img_2.png"  />
       <Box title="CSS" image="education.svg"  />

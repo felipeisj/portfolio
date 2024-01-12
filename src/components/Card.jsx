@@ -23,16 +23,6 @@ const Card = ({ title, content, imageUrl }) => {
     </div>
 
 
-    // <div
-    //   key={title}
-    //   className="flex flex-col cursor-pointer bg-white justify-center p-4 text-center items-center mt-12 rounded-tl-[35px] rounded-br-[35px] shadow-2xl md:min-h-[340px] w-full card-item-div max-w-screen-md min-h-[260px]"
-    //   >
-    //   <p className="text-[24px] font-bold uppercase mb-7" style={cardStyle}>{title}</p>
-    //   <p className="text-[15px] font-medium leading-2 w-full">
-    //     {content}
-    //   </p>
-    // </div>
-
   );
 };
 

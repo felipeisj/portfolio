@@ -2,9 +2,9 @@ import Card from "../components/Card";
 
 const About = () => {
   return (
-    <div className="w-full flex-row mb-24 px-[2.5rem]">
-      <h1 className="text-5xl text-white font-bold p-4 text-center mt-0">About me</h1>
-      <div className="about-cards flex gap-10 flex-col md:flex-row font-bold mt-24">
+    <div className="w-full flex flex-col px-[2.5rem] ">
+      <h1 className="text-5xl text-white font-bold p-4 text-center my-16">About me</h1>
+      <div className="about-cards flex gap-10 flex-col md:flex-row font-bold mt-24 text-green-400">
         <Card title="Education" imageUrl="education.svg" content={<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure recusandae atque nesciunt necessitatibus incidunt debitis labore, amet dolor quia, cum tempore deleniti aliquid veniam fugit vel temporibus, architecto aliquam mollitia.</p>} />
         <Card title="Experience" imageUrl="binary.svg" content={<p>React and nodejs dev for the last 2 years React and nodejs dev for the last 2 years React and nodejs dev for the last 2 years React and nodejs dev for the last 2 years</p>} />
         <Card title="Skills" imageUrl="back_code.svg" content={
