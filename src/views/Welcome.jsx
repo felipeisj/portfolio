@@ -2,16 +2,16 @@
 const Welcome = () => {
   return (
     <>
-      <div className="flex flex-col justify-around md:h-64 text-white ">
+      <div className="flex flex-col justify-around mt-32 md:m-0 md:h-64 text-white ">
           <span className="text-green-400 text-5xl font-bold ">
-            <h1 className="text-6xl font p-4 min-w-fit h-auto font-bold bg-green-500 text-white rounded-md inline mr-2">
+            <h1 className="text-6xl font p-2 min-w-fit h-auto font-bold bg-green-500 text-white rounded-md inline mr-2">
               Felipe</h1>
             Full Stack Dev
           </span>
-        <div className="max-w-md mt-4">
+        <div className="max-w-xl mt-4">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quo ad placeat harum aut dolor, earum praesentium laudantium debitis in ex recusandae temporibus quisquam molestiae aliquid. Officiis eius ipsa minima!</p>
           <ul className="flex flex-nowrap mt-2">
-            <li className="mr-1 " >
+            <li className="mr-2 " >
               <a href="https://linkedin.com/in/felipe-salazar-jimenez" >
                 <img src="linkedin.svg" className="h-8 w-8 rounded-xl opacity-100 hover:opacity-50 transition-opacity duration-300"/>
               </a>

@@ -12,7 +12,7 @@ function App() {
     <Navbar />
     <section 
         id="welcome" 
-        className="flex flex-col md:flex-row justify-around items-center h-screen "
+        className="flex flex-col md:flex-row md:justify-evenly items-center md:h-screen "
       >
         <Welcome />
       </section>

@@ -3,11 +3,11 @@ import GridExperience from "../components/GridExperience";
 const Projects = () => {
 
   return (
-    <div className="flex flex-column w-full items-center justify-around px-16 text-white">
+    <div className="flex flex-column w-full items-start justify-around px-16 text-white">
 
       {/* <ProjectsGrid /> */}
-      <div className="font-mono max-w-md">
-        <h2 className="text-4xl py-4 font-bold">Career</h2>
+      <div className="font-normal max-w-md">
+        <h2 className="text-4xl mb-4 font-bold">Career</h2>
         <ul className="">
           <li className="p-2">
             <h2 className="font-bold text-2xl">Floid</h2>
@@ -28,7 +28,7 @@ const Projects = () => {
         </button>
       </div>
       <div className="text-white">
-        <h2 className="font-mono text-3xl ">Experience</h2>
+        <h2 className="font-bold text-4xl ">Experience</h2>
         <GridExperience /> 
       </div>
     </div>

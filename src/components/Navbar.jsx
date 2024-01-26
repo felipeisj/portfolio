@@ -3,8 +3,7 @@ const Navbar = () => {
   return (
     <header className="flex w-full fixed bg-gray-800 items-center pt-4 text-white z-100
                       z-10 shadow-lg">
-      <div className="flex max-w-4xl font-bold justify-between mx-auto  w-full h-16">
-        <h1 className="text-xl my-auto">Logo</h1>
+      <div className="flex max-w-4xl font-bold justify-end mx-auto w-full h-16">
         <nav className="flex ">
           <ul className="flex space-x-12 my-auto">
             <li>
