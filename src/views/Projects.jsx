@@ -12,14 +12,17 @@ const Projects = () => {
           <li className="p-2">
             <h2 className="font-bold text-2xl">Floid</h2>
             <p>Jan 2023 - Jan 2024 <br /> QA Engineer</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat soluta minus dolorem nulla, cumque quis sed dignissimos explicabo qui dolor voluptates eos error autem voluptas rerum iure et recusandae!</p>
             </li>
           <li className="p-2">
             <h2 className="font-bold text-2xl">AltaVenta SPA</h2>
             <p>Jan 2022 - December 2022 <br />Full Stack</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat soluta minus dolorem nulla, cumque quis sed dignissimos explicabo qui dolor voluptates eos error autem voluptas rerum iure et recusandae!</p>
           </li>
           <li className="p-2">
             <h2 className="font-bold text-2xl">Internship</h2>
             <p>Jan 2023 - Jan 2024 <br /> QA Engineer</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat soluta minus dolorem nulla, cumque quis sed dignissimos explicabo qui dolor voluptates eos error autem voluptas rerum iure et recusandae!</p>
           </li>
         </ul>
         <button className="p-3 mt-4 bg-green-500 rounded-md transition duration-500 ease-in-out hover:scale-110">
