@@ -27,7 +27,7 @@ function App() {
         <Projects />
       </section>
 
-      <hr className="h-px w-4/5 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-200" />
+      {/* <hr className="h-px w-4/5 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-200" /> */}
 
       <section 
         id="about" 

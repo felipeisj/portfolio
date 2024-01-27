@@ -13,13 +13,13 @@ const AboutCard = ({ title, content, imageUrl }) => {
         className="absolute inset-0 bg-cover bg-center " 
         style={cardStyle}
       />
-      <div className="absolute inset-0 bg-black  bg-opacity-20 group-hover:bg-opacity-60 hover:scale-110 transition-all duration-300  "></div>
+      <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-80 hover:scale-110 transition-all duration-300  "></div>
       <h2 className="text-xl font-bold inset-0 z-10 text-center text-black mt-4 absolute duration-300
                     group-hover:hidden "
       >
         {title}
       </h2>
-      <div className="content absolute inset-0 text-green-600 opacity-0 group-hover:opacity-100 p-4 transition-opacity
+      <div className="content absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity
                       duration-300 items-center justify-center hidden group-hover:flex"
       >
         {content}        
