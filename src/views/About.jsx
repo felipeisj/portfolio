@@ -2,9 +2,9 @@ import AboutCard from "../components/AboutCard";
 
 const About = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-evenly px-[2.5rem] ">
-      <h1 className="text-6xl text-white font-bold pb-4 text-center ">About</h1>
-      <div className="about-cards mb-12 flex gap-8 flex-col md:flex-row font-bold">
+    <div className="w-full md:h-screen flex flex-col justify-evenly px-[2.5rem] ">
+      <h1 className="text-4xl md:text-6xl text-white font-bold my-12 text-center ">About</h1>
+      <div className="about-cards mb-12 flex gap-8 flex-col md:flex-row justify-between items-center font-bold">
         <AboutCard title="Education" imageUrl="educat.svg"  
           content={
             

@@ -3,7 +3,7 @@ import GridExperience from "../components/GridExperience";
 const Projects = () => {
 
   return (
-    <div className="flex flex-col md:flex-row w-full items-start justify-around md:mt-16  text-white">
+    <div className="flex flex-col md:flex-row w-full items-center text-center md:text-left md:items-start justify-around md:mt-16 text-white">
 
       {/* <ProjectsGrid /> */}
       <div className="font-normal max-w-lg h-max">

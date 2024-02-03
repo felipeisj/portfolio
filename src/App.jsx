@@ -12,7 +12,7 @@ function App() {
     <Navbar />
     <section 
         id="welcome" 
-        className="flex flex-col md:flex-row justify-between md:justify-evenly items-center md:h-screen "
+        className="flex flex-col md:flex-row justify-evenly items-center h-screen "
       >
         <Welcome />
       </section>
@@ -31,7 +31,7 @@ function App() {
 
       <section 
         id="about" 
-        className="h-screen flex flex-col md:flex-row"
+        className="h-auto md:h-screen flex flex-col md:flex-row"
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <About />
