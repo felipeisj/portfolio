@@ -1,6 +1,5 @@
 
-# Welcome to my portfolio
-
+# Welcome to tijuana
 ## This is a vite + react project, enjoy it
 
 # Pipe's (as I like to be called) Portfolio
