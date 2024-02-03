@@ -12,16 +12,16 @@ function App() {
     <Navbar />
     <section 
         id="welcome" 
-        className="flex flex-col md:flex-row md:justify-evenly items-center md:h-screen "
+        className="flex flex-col md:flex-row justify-between md:justify-evenly items-center md:h-screen "
       >
         <Welcome />
       </section>
 
-      <hr className="h-px w-4/5 mx-auto border-0 rounded md:my-10 bg-gray-200"/>
+      <hr className="h-px w-4/5 hidden md:block mx-auto border-0 rounded my-10 bg-gray-200"/>
 
       <section 
         id="projects" 
-        className="bg-[#1F2937] flex justify-center min-h-screen p-16" 
+        className="bg-[#1F2937] flex flex-col md:flex-row md:justify-center h-auto md:min-h-screen p-16" 
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <Projects />
@@ -31,7 +31,7 @@ function App() {
 
       <section 
         id="about" 
-        className="h-screen "
+        className="h-screen flex flex-col md:flex-row"
         // style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <About />

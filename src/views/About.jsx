@@ -18,19 +18,19 @@ const About = () => {
         <AboutCard title="Other Experiences" imageUrl="exper.svg" content={
           <ul className="list-none space-y-2 text-white">
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               English and spanish fluent
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Entrepeneur Person
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Lived a year in Australia
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Experience in Data Science
             </li>
           </ul>
@@ -38,19 +38,19 @@ const About = () => {
         <AboutCard title="Skills" imageUrl="skills.svg" content={
           <ul className="list-none space-y-2 text-white">
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Resilience
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Self-motivated
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Responsible
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Team Player
             </li>
           </ul>
@@ -58,19 +58,19 @@ const About = () => {
         <AboutCard title="Hobbies" imageUrl="hobbies.svg" content={
           <ul className="list-none space-y-2 text-white">
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Passionate about padel
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Avid hiker
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Keen reader
             </li>
             <li className="flex items-center">
-              <span className="h-2 w-4 mr-2 bg-green-400 inline-block rounded-full"></span>
+              <span className="h-2 w-2 mr-2 bg-green-400 inline-block rounded-full"></span>
               Coffee Lover
             </li>
           </ul>

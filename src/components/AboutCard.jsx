@@ -4,13 +4,13 @@ const AboutCard = ({ title, content, imageUrl }) => {
   const cardStyle = {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center', // Centers the image
+    // backgroundPosition: 'center', // Centers the image
   };
 
   return (
-    <div className="group bg-white shadow-md rounded-lg overflow-hidden cursor-pointer relative w-2/5 md:h-64 h-1/4">
+    <div className="group rounded-lg overflow-hidden cursor-pointer relative w-2/5 md:h-64 h-12">
       <div 
-        className="absolute inset-0 bg-cover bg-center " 
+        className="absolute inset-0 bg-center " 
         style={cardStyle}
       />
       <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-80 hover:scale-110 transition-all duration-300  "></div>
