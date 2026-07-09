@@ -49,6 +49,8 @@ type Project = {
   highlights?: string[];
   stack: string[];
   url?: string;
+  playStoreUrl?: string;
+  appStoreUrl?: string;
   domain?: string;
   accent: string;
 };
@@ -68,6 +70,8 @@ export const PROJECTS: Project[] = [
       "CI/CD con GitHub Actions + EAS Build, monitoreo con Sentry y Firebase Analytics",
     ],
     stack: ["React Native", "Node.js", "AWS", "Next.js", "MySQL"],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.pololitos.app",
+    appStoreUrl: "https://apps.apple.com/app/pololitos/id6737562916",
     accent: "#4640DE",
   },
   {
