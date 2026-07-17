@@ -5,10 +5,12 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import { Mail } from "lucide-react";
 import { PERSONAL } from "@/lib/data";
+import { useLanguage } from "@/context/LanguageContext";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function Hero() {
   const rootRef = useRef<HTMLDivElement>(null);
+  const { language, t } = useLanguage();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -44,7 +46,7 @@ export default function Hero() {
           </span>
           <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-xs text-ink-soft">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-            Disponible para nuevos proyectos
+            {t("hero.availability")}
           </span>
         </div>
 
@@ -52,19 +54,22 @@ export default function Hero() {
           data-hero-item
           className="mt-8 font-display font-semibold text-3xl sm:text-4xl tracking-tight text-balance"
         >
-          Hola, soy <span className="text-accent">{PERSONAL.firstName}</span>
+          {language === "es" ? (
+            <>
+              Hola, soy <span className="text-accent">{PERSONAL.firstName}</span>
+            </>
+          ) : (
+            <>
+              Hi, I'm <span className="text-accent">{PERSONAL.firstName}</span>
+            </>
+          )}
         </h1>
 
         <p
           data-hero-item
           className="mt-4 max-w-xl text-base md:text-lg text-ink-soft leading-relaxed"
         >
-          +4 años de experiencia como{" "}
-          <span className="font-medium text-ink">
-            Full-Stack Developer y Tech Lead
-          </span>
-          . Construyo productos de punta a punta: apps móviles en producción,
-          APIs y la infraestructura en AWS que las sostiene.
+          {t("hero.subtitle")}
         </p>
 
         <div data-hero-item className="mt-7 flex flex-wrap items-center gap-2.5">
@@ -73,7 +78,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-ink text-paper px-4 py-2 text-sm font-medium hover:bg-accent transition-colors"
           >
             <Mail size={15} />
-            Contáctame
+            {t("hero.contactCTA")}
           </a>
           <a
             href={PERSONAL.linkedin}
@@ -82,7 +87,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm text-ink hover:border-accent hover:text-accent transition-colors"
           >
             <LinkedinIcon size={15} />
-            LinkedIn
+            {t("hero.linkedinCTA")}
           </a>
           <a
             href={PERSONAL.github}
@@ -91,7 +96,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm text-ink hover:border-accent hover:text-accent transition-colors"
           >
             <GithubIcon size={15} />
-            GitHub
+            {t("hero.githubCTA")}
           </a>
         </div>
       </div>

@@ -1,9 +1,28 @@
+"use client";
+
 import { ArrowUpRight, FolderGit2 } from "lucide-react";
 import { PROJECTS } from "@/lib/data";
+import { useLanguage } from "@/context/LanguageContext";
 import Reveal from "./Reveal";
 
 export default function Projects() {
-  const [featured, ...rest] = PROJECTS;
+  const { t } = useLanguage();
+
+  const translateProject = (project: typeof PROJECTS[number]) => {
+    const translation = t(`projects.items.${project.slug as any}` as any) as any;
+    if (translation && typeof translation === "object") {
+      return {
+        ...project,
+        category: translation.category || project.category,
+        description: translation.description || project.description,
+        highlights: (translation.highlights as string[]) || project.highlights,
+      };
+    }
+    return project;
+  };
+
+  const translatedProjects = PROJECTS.map(translateProject);
+  const [featured, ...rest] = translatedProjects;
 
   return (
     <section id="work" className="py-16 md:py-20 bg-paper-alt">
@@ -11,7 +30,7 @@ export default function Projects() {
         <Reveal className="flex items-center gap-2.5">
           <FolderGit2 size={18} className="text-accent" />
           <h2 className="font-display font-semibold text-xl tracking-tight">
-            Proyectos
+            {t("projects.title")}
           </h2>
         </Reveal>
 
@@ -34,7 +53,7 @@ export default function Projects() {
             </p>
 
             <ul className="mt-4 space-y-1.5">
-              {(featured.highlights ?? []).map((h) => (
+              {(featured.highlights ?? []).map((h: string) => (
                 <li
                   key={h}
                   className="flex gap-2 text-sm text-ink-soft leading-relaxed"
@@ -66,7 +85,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white hover:bg-paper-alt px-3.5 py-2 text-xs font-semibold text-ink hover:border-accent hover:text-accent transition-colors"
                   >
-                    <span>Descargar en App Store</span>
+                    <span>{t("projects.downloadAppStore")}</span>
                     <ArrowUpRight size={13} className="text-ink-faint" />
                   </a>
                 )}
@@ -77,7 +96,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white hover:bg-paper-alt px-3.5 py-2 text-xs font-semibold text-ink hover:border-accent hover:text-accent transition-colors"
                   >
-                    <span>Descargar en Google Play</span>
+                    <span>{t("projects.downloadPlayStore")}</span>
                     <ArrowUpRight size={13} className="text-ink-faint" />
                   </a>
                 )}
@@ -133,7 +152,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white hover:bg-paper-alt px-3 py-1.5 text-[11px] font-semibold text-ink hover:border-accent hover:text-accent transition-colors"
                       >
-                        <span>App Store</span>
+                        <span>{t("projects.appStore")}</span>
                         <ArrowUpRight size={11} className="text-ink-faint" />
                       </a>
                     )}
@@ -144,7 +163,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white hover:bg-paper-alt px-3 py-1.5 text-[11px] font-semibold text-ink hover:border-accent hover:text-accent transition-colors"
                       >
-                        <span>Google Play</span>
+                        <span>{t("projects.playStore")}</span>
                         <ArrowUpRight size={11} className="text-ink-faint" />
                       </a>
                     )}
